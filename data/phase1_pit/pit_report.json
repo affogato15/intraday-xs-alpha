@@ -1,0 +1,159 @@
+{
+  "generated_at_utc": "2026-09-28T17:36:17+00:00",
+  "source": {
+    "provider": "fja05680/sp500 (GitHub)",
+    "provider_urls": [
+      "https://github.com/fja05680/sp500",
+      "https://raw.githubusercontent.com/fja05680/sp500/master/S%26P%20500%20Historical%20Components%20%26%20Changes.csv",
+      "https://raw.githubusercontent.com/fja05680/sp500/master/sp500_changes_since_2019.csv"
+    ],
+    "origin": "Andreas F. Clenow, 'Trading Evolved' open dataset (initial snapshot) + Wikipedia-derived incremental updates by the fja05680 maintainer.",
+    "known_limitations": [
+      "Pre-2001 membership is likely incomplete (487-494 symbols on early rows; canonical target 500).",
+      "sp500_changes_since_2019.csv may lag S&P announcements by a few weeks.",
+      "Ticker-rename events are recorded as add/remove pairs in the changes file; must be separated from real index churn.",
+      "Latest event as of download: 2026-08-18. Anything after that is not in this snapshot."
+    ]
+  },
+  "file_hashes": {
+    "sp500_historical_components.csv": "bd2745939a709f31",
+    "sp500_changes_since_2019.csv": "1fb4ec6641324ca7"
+  },
+  "trustworthy_start_et": "2001-01-16",
+  "reconstruction_scope": {
+    "first_date": "1996-01-02",
+    "last_date": "2026-08-18",
+    "n_days_covered": 11187,
+    "n_distinct_tickers_ever_member": 1208
+  },
+  "events_summary": {
+    "n_events_total": 1533,
+    "real_additions_ex_rebrand": 772,
+    "real_removals_ex_rebrand": 757,
+    "n_rebrand_rows": 4,
+    "rebrands_recognised": [
+      "2022-06-09",
+      "2022-11-08"
+    ]
+  },
+  "sanity_checks": [
+    {
+      "label": "TSLA not in index day before add",
+      "date": "2020-12-20",
+      "ticker": "TSLA",
+      "expected": "not_member",
+      "actual": "not_member",
+      "passed": true
+    },
+    {
+      "label": "TSLA added 2020-12-21",
+      "date": "2020-12-21",
+      "ticker": "TSLA",
+      "expected": "member",
+      "actual": "member",
+      "passed": true
+    },
+    {
+      "label": "KVUE added 2023-08-25 (JNJ spin)",
+      "date": "2023-08-25",
+      "ticker": "KVUE",
+      "expected": "member",
+      "actual": "member",
+      "passed": true
+    },
+    {
+      "label": "GEHC added 2023-01-04 (GE spin)",
+      "date": "2023-01-04",
+      "ticker": "GEHC",
+      "expected": "member",
+      "actual": "member",
+      "passed": true
+    },
+    {
+      "label": "GEV added 2024-04-02 (GE Vernova spin)",
+      "date": "2024-04-02",
+      "ticker": "GEV",
+      "expected": "member",
+      "actual": "member",
+      "passed": true
+    },
+    {
+      "label": "SOLV added 2024-04-01 (MMM spin)",
+      "date": "2024-04-01",
+      "ticker": "SOLV",
+      "expected": "member",
+      "actual": "member",
+      "passed": true
+    },
+    {
+      "label": "FB member day before META rebrand",
+      "date": "2022-06-08",
+      "ticker": "FB",
+      "expected": "member",
+      "actual": "member",
+      "passed": true
+    },
+    {
+      "label": "META member on rebrand day",
+      "date": "2022-06-09",
+      "ticker": "META",
+      "expected": "member",
+      "actual": "member",
+      "passed": true
+    },
+    {
+      "label": "LEHMQ (Lehman) member day of bankruptcy",
+      "date": "2008-09-15",
+      "ticker": "LEHMQ",
+      "expected": "member",
+      "actual": "member",
+      "passed": true
+    },
+    {
+      "label": "SIVB removed after 2023-03 collapse",
+      "date": "2023-03-15",
+      "ticker": "SIVB",
+      "expected": "not_member",
+      "actual": "not_member",
+      "passed": true
+    },
+    {
+      "label": "trustworthy start \u2014 >=494 constituents",
+      "date": "2001-01-16",
+      "ticker": null,
+      "expected": ">=494 members",
+      "actual": "494 members",
+      "passed": true
+    }
+  ],
+  "n_sanity_passed": 11,
+  "n_sanity_total": 11,
+  "unresolved_ambiguities": [
+    {
+      "issue": "Bankruptcy-era ticker suffixes ('Q')",
+      "detail": "The source dataset preserves bankruptcy-era ticker suffixes (e.g. 'LEHMQ' for post-bankruptcy Lehman, 'AAMRQ' for AMR/AA). Real-world S&P membership for Lehman was under 'LEH' pre-bankruptcy; source conflates these. Downstream code matching PIT tickers against HF must handle these suffixes; HF may store under either variant."
+    },
+    {
+      "issue": "FISV \u2192 FI rebrand (2024-07-11)",
+      "detail": "Fiserv rebranded to 'FI' on 2024-07-11 but fja05680 changes file does not record this event. PIT membership therefore does not reflect the rename; downstream code must alias FI \u2194 FISV manually (already done in phase1.hfdatalibrary_adapter TICKER_ALIASES)."
+    },
+    {
+      "issue": "Pre-2001 completeness",
+      "detail": "Historical snapshot begins with 499 tickers on 1996-01-02 and slowly grows to 494 by 2001-01-16. Maintainer suspects missing symbols in early years but could not verify. Do not use PIT membership prior to 2001-01-16 for confirmatory work."
+    },
+    {
+      "issue": "Post-2026-08-18 latency",
+      "detail": "Latest change in the fja05680 changes file is 2026-08-18. Any S&P membership event between 2026-08-19 and dataset use date is not reflected. Current Wikipedia snapshot at project start (2026-09-27) shows 503 constituents including RDDT and VMRK (added 2026-08-18) but may include additional post-cutoff changes."
+    },
+    {
+      "issue": "Old delisting-suffix tickers",
+      "detail": "Some historic tickers in snapshots carry `-YYYYMM` suffix marking delisting month (e.g. 'AAL-199702'). Adapter strips the suffix and uses the bare ticker. Provider files in HF might use fully different exchange symbols for old delistings \u2014 matching against HF for pre-2010 constituents is imperfect."
+    }
+  ],
+  "artifacts": {
+    "membership_daily": "/Users/aleksandr/Projects/PythonProject1/data/phase1_pit/membership_daily.parquet",
+    "events": "/Users/aleksandr/Projects/PythonProject1/data/phase1_pit/pit_events.parquet",
+    "year_stats": "/Users/aleksandr/Projects/PythonProject1/data/phase1_pit/membership_year_stats.parquet",
+    "hf_coverage_by_year": "/Users/aleksandr/Projects/PythonProject1/data/phase1_pit/hf_coverage_by_year.parquet"
+  }
+}

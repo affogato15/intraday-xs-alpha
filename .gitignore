@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / tooling
+.idea/
+.vscode/
+.claude/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw HF 5-min bar dataset (7.7GB, provider-owned; regenerate via download pipeline)
+data/hfdatalibrary_clean_5min_*/
+
+# Raw Yahoo 5-min bars (47MB, exploratory Phase 0 window; regenerate via phase0.download)
+data/phase0_yahoo/bars_5m/
+
+# Exceeds GitHub 100MB file limit; regenerate via phase1.data_quality
+data/phase1_audit/coverage_by_ticker_session.parquet

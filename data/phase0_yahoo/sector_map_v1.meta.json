@@ -1,0 +1,19 @@
+{
+  "fetched_at_utc": "2026-09-27T21:20:44+00:00",
+  "source_url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+  "n_tickers": 503,
+  "n_gics_sectors": 11,
+  "gics_to_etf": {
+    "Information Technology": "XLK",
+    "Financials": "XLF",
+    "Health Care": "XLV",
+    "Energy": "XLE",
+    "Consumer Discretionary": "XLY",
+    "Consumer Staples": "XLP",
+    "Industrials": "XLI",
+    "Materials": "XLB",
+    "Utilities": "XLU",
+    "Real Estate": "XLRE",
+    "Communication Services": "XLC"
+  }
+}

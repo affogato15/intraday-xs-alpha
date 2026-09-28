@@ -1,0 +1,183 @@
+{
+  "generated_at_utc": "2026-09-27T21:09:25+00:00",
+  "min_coverage": 0.85,
+  "lookbacks_min": [
+    5,
+    15,
+    30,
+    60,
+    120
+  ],
+  "primary_horizon_min": 60,
+  "diagnostic_horizons_min": [
+    30,
+    120
+  ],
+  "decision_times_et": [
+    "10:00",
+    "11:00",
+    "12:00",
+    "13:00",
+    "14:00",
+    "15:00"
+  ],
+  "n_ic_observations_total": 4500,
+  "primary_top10_by_abs_mean": [
+    {
+      "L_min": 15,
+      "H_min": 60,
+      "decision_time_et": "13:00",
+      "bar_seq": 42,
+      "ic_mean": -0.053335877749505864,
+      "ic_median": -0.05931264206575114,
+      "ic_std": 0.15764935176564351,
+      "n_sessions": 60,
+      "avg_n_names": 510.03333333333336,
+      "ic_tstat_naive": -2.6206129484917864
+    },
+    {
+      "L_min": 30,
+      "H_min": 60,
+      "decision_time_et": "13:00",
+      "bar_seq": 42,
+      "ic_mean": -0.038988083671559245,
+      "ic_median": -0.04668544471682622,
+      "ic_std": 0.15486084283705387,
+      "n_sessions": 60,
+      "avg_n_names": 507.4,
+      "ic_tstat_naive": -1.950140474430637
+    },
+    {
+      "L_min": 5,
+      "H_min": 60,
+      "decision_time_et": "10:00",
+      "bar_seq": 6,
+      "ic_mean": -0.03867543665183495,
+      "ic_median": -0.0297027970896067,
+      "ic_std": 0.15612397325395552,
+      "n_sessions": 60,
+      "avg_n_names": 513.0666666666667,
+      "ic_tstat_naive": -1.9188510122811862
+    },
+    {
+      "L_min": 120,
+      "H_min": 60,
+      "decision_time_et": "13:00",
+      "bar_seq": 42,
+      "ic_mean": -0.03433296045535058,
+      "ic_median": -0.027709012124463858,
+      "ic_std": 0.1401406443238005,
+      "n_sessions": 60,
+      "avg_n_names": 511.06666666666666,
+      "ic_tstat_naive": -1.8976790739214229
+    },
+    {
+      "L_min": 30,
+      "H_min": 60,
+      "decision_time_et": "11:00",
+      "bar_seq": 18,
+      "ic_mean": 0.03226152456279939,
+      "ic_median": 0.046221090706839496,
+      "ic_std": 0.17659891994692878,
+      "n_sessions": 60,
+      "avg_n_names": 509.65,
+      "ic_tstat_naive": 1.4150522256028841
+    },
+    {
+      "L_min": 30,
+      "H_min": 60,
+      "decision_time_et": "10:00",
+      "bar_seq": 6,
+      "ic_mean": 0.03061056748146541,
+      "ic_median": 0.03870778814249187,
+      "ic_std": 0.15964887148074408,
+      "n_sessions": 60,
+      "avg_n_names": 509.73333333333335,
+      "ic_tstat_naive": 1.485187047977012
+    },
+    {
+      "L_min": 5,
+      "H_min": 60,
+      "decision_time_et": "13:00",
+      "bar_seq": 42,
+      "ic_mean": -0.02335012067083535,
+      "ic_median": -0.02005597656332947,
+      "ic_std": 0.12394913333015682,
+      "n_sessions": 60,
+      "avg_n_names": 512.2166666666667,
+      "ic_tstat_naive": -1.4592216348813491
+    },
+    {
+      "L_min": 60,
+      "H_min": 60,
+      "decision_time_et": "12:00",
+      "bar_seq": 30,
+      "ic_mean": -0.020660994667213953,
+      "ic_median": -0.04103834127040139,
+      "ic_std": 0.17270042169165678,
+      "n_sessions": 60,
+      "avg_n_names": 510.6333333333333,
+      "ic_tstat_naive": -0.9266878155638653
+    },
+    {
+      "L_min": 5,
+      "H_min": 60,
+      "decision_time_et": "11:00",
+      "bar_seq": 18,
+      "ic_mean": 0.02065974977065692,
+      "ic_median": 0.046832046809655165,
+      "ic_std": 0.18216343988089093,
+      "n_sessions": 60,
+      "avg_n_names": 512.6166666666667,
+      "ic_tstat_naive": 0.8784953429830391
+    },
+    {
+      "L_min": 30,
+      "H_min": 60,
+      "decision_time_et": "12:00",
+      "bar_seq": 30,
+      "ic_mean": -0.020203892743298302,
+      "ic_median": -0.014928645098437741,
+      "ic_std": 0.15981791680008473,
+      "n_sessions": 60,
+      "avg_n_names": 507.81666666666666,
+      "ic_tstat_naive": -0.9792311361589933
+    }
+  ],
+  "primary_by_L_avg_across_dt": [
+    {
+      "L_min": 5,
+      "ic_mean_avg_dt": -0.00883366901636955,
+      "ic_tstat_avg_dt": -0.526345556458151,
+      "avg_n_names": 512.5966666666667
+    },
+    {
+      "L_min": 15,
+      "ic_mean_avg_dt": -0.014274738746416039,
+      "ic_tstat_avg_dt": -0.6680310790045836,
+      "avg_n_names": 510.91
+    },
+    {
+      "L_min": 30,
+      "ic_mean_avg_dt": -0.0018602753229461431,
+      "ic_tstat_avg_dt": -0.16624742821372882,
+      "avg_n_names": 508.7533333333333
+    },
+    {
+      "L_min": 60,
+      "ic_mean_avg_dt": -0.008022119538804886,
+      "ic_tstat_avg_dt": -0.4224808344860672,
+      "avg_n_names": 510.79583333333335
+    },
+    {
+      "L_min": 120,
+      "ic_mean_avg_dt": -0.022830602524634303,
+      "ic_tstat_avg_dt": -1.188366189573995,
+      "avg_n_names": 511.34444444444443
+    }
+  ],
+  "artifacts": {
+    "ic_per_timestamp": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/signal_map/ic_per_timestamp.parquet",
+    "ic_summary_L_H_dt": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/signal_map/ic_summary_L_H_dt.parquet"
+  }
+}

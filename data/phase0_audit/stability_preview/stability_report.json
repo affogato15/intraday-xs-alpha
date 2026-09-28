@@ -1,0 +1,80 @@
+{
+  "generated_at_utc": "2026-09-27T21:34:04+00:00",
+  "candidates": [
+    {
+      "label": "midday_reversal_raw",
+      "variant": "raw",
+      "L_min": 15,
+      "decision_time_et": "13:00"
+    },
+    {
+      "label": "midday_reversal_sec_rel",
+      "variant": "sec_rel",
+      "L_min": 15,
+      "decision_time_et": "13:00"
+    },
+    {
+      "label": "morning_momentum_raw",
+      "variant": "raw",
+      "L_min": 30,
+      "decision_time_et": "10:00"
+    },
+    {
+      "label": "morning_momentum_sec_rel",
+      "variant": "sec_rel",
+      "L_min": 30,
+      "decision_time_et": "10:00"
+    }
+  ],
+  "per_candidate": [
+    {
+      "label": "midday_reversal_raw",
+      "variant": "raw",
+      "L_min": 15,
+      "decision_time_et": "13:00",
+      "n_sessions": 60,
+      "overall_ic_mean": -0.05333587774950587,
+      "max_abs_weekly_ic": 0.2505219575997064,
+      "n_weeks_total": 13,
+      "n_weeks_same_sign_as_overall": 11
+    },
+    {
+      "label": "midday_reversal_sec_rel",
+      "variant": "sec_rel",
+      "L_min": 15,
+      "decision_time_et": "13:00",
+      "n_sessions": 60,
+      "overall_ic_mean": -0.04762121799460679,
+      "max_abs_weekly_ic": 0.30090965697663974,
+      "n_weeks_total": 13,
+      "n_weeks_same_sign_as_overall": 11
+    },
+    {
+      "label": "morning_momentum_raw",
+      "variant": "raw",
+      "L_min": 30,
+      "decision_time_et": "10:00",
+      "n_sessions": 60,
+      "overall_ic_mean": 0.030610567481465397,
+      "max_abs_weekly_ic": 0.21751504228439056,
+      "n_weeks_total": 13,
+      "n_weeks_same_sign_as_overall": 9
+    },
+    {
+      "label": "morning_momentum_sec_rel",
+      "variant": "sec_rel",
+      "L_min": 30,
+      "decision_time_et": "10:00",
+      "n_sessions": 60,
+      "overall_ic_mean": 0.037781700335818055,
+      "max_abs_weekly_ic": 0.1452049306637217,
+      "n_weeks_total": 13,
+      "n_weeks_same_sign_as_overall": 8
+    }
+  ],
+  "artifacts": {
+    "stability_weekly": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/stability_preview/stability_weekly.parquet",
+    "stability_dow": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/stability_preview/stability_dow.parquet",
+    "stability_volregime": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/stability_preview/stability_volregime.parquet"
+  }
+}

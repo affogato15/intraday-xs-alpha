@@ -1,0 +1,32 @@
+{
+  "generated_at_utc": "2026-09-28T16:08:21+00:00",
+  "dataset_dir": "data/hfdatalibrary_clean_5min_1391tickers_2026-09-28",
+  "n_files": 1388,
+  "n_canonical_tickers": 1388,
+  "n_delisted_pre_2026_07": 263,
+  "ticker_aliases": {
+    "META": "FB",
+    "FI": "FISV",
+    "GEN": "NLOK"
+  },
+  "known_truncated_series": {
+    "META": {
+      "provider_symbol": "FB",
+      "truncation_ts_et": "2026-07-31",
+      "reason": "provider stopped updating FB after this date; META not created as separate series"
+    },
+    "GEN": {
+      "provider_symbol": "NLOK",
+      "truncation_ts_et": "2022-11-07",
+      "reason": "provider truncated at NortonLifeLock->Gen Digital rebrand; no continuation series"
+    }
+  },
+  "known_missing_sp500_partial": [
+    "GEHC",
+    "KVUE",
+    "GEV",
+    "SOLV",
+    "VLTO",
+    "WBD"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "generated_at_utc": "2026-09-27T20:41:55+00:00",
+  "source_manifest": "/Users/aleksandr/Projects/PythonProject1/data/phase0_yahoo/download_manifest_5m.json",
+  "universe_version": "v1",
+  "data_start_utc": "2026-07-02T13:30:00+00:00",
+  "data_end_utc": "2026-09-25T19:55:00+00:00",
+  "n_bar_files": 515,
+  "n_tickers_with_bars": 515,
+  "n_sessions": 60,
+  "session_min": "2026-07-02",
+  "session_max": "2026-09-25",
+  "total_bar_rows": 2402235,
+  "expected_bars_per_session": {
+    "min": 78,
+    "median": 78,
+    "max": 78
+  },
+  "coverage_by_ticker": {
+    "mean_mean_coverage": 0.9966952949962659,
+    "median_mean_coverage": 1.0,
+    "tickers_below_0p90": 2,
+    "tickers_below_0p50": 1
+  },
+  "issues": {
+    "total_zero_volume_bars": 183,
+    "tickers_with_intra_session_gap": 126,
+    "tickers_with_intra_session_extreme_bar": 0,
+    "overnight_gap": {
+      "n_gap_rows": 30335,
+      "n_abs_gap_gt_5pct": 449,
+      "n_abs_gap_gt_10pct": 80,
+      "n_abs_gap_gt_20pct": 11
+    }
+  },
+  "benchmark_alignment": {
+    "spy_available": true,
+    "tickers_checked": 514,
+    "mean_frac_aligned": 1.0,
+    "min_frac_aligned": 1.0,
+    "tickers_below_0p95": 0
+  },
+  "artifacts": {
+    "coverage_by_ticker_session": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/coverage_by_ticker_session.parquet",
+    "coverage_by_ticker": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/coverage_by_ticker.parquet",
+    "session_calendar": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/session_calendar.parquet"
+  }
+}

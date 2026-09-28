@@ -1,0 +1,75 @@
+{
+  "generated_at_utc": "2026-09-28T17:41:15+00:00",
+  "dataset_dir": "/Users/aleksandr/Projects/PythonProject1/data/hfdatalibrary_clean_5min_1391tickers_2026-09-28",
+  "n_files_processed": 1388,
+  "n_tickers_with_bars": 1388,
+  "n_sessions": 9000,
+  "session_min": "1991-01-02",
+  "session_max": "2026-09-24",
+  "expected_bars_per_session": {
+    "min": 0,
+    "median": 78,
+    "max": 78,
+    "n_full_day_78_bars": 8909,
+    "n_early_close": 88
+  },
+  "coverage_by_ticker": {
+    "mean_active_coverage": 0.7634045538974885,
+    "median_active_coverage": 0.9625809244429697,
+    "tickers_below_0p90_active": 559,
+    "tickers_below_0p50_active": 326,
+    "note": "'active' = averaged over each ticker's own first-to-last session range, not the full dataset calendar."
+  },
+  "issues": {
+    "total_zero_volume_bars": 190037,
+    "tickers_with_intra_session_gap": 1388,
+    "tickers_with_intra_session_extreme_bar": 102
+  },
+  "source_boundary": {
+    "expected_boundary_ts_et": "2022-03-07",
+    "n_tickers_switching_on_expected_date": 1167,
+    "n_tickers_with_iex_data": 1254,
+    "n_tickers_with_pitrading_data": 1388
+  },
+  "known_truncated_series": {
+    "META": {
+      "provider_symbol": "FB",
+      "truncation_ts_et": "2022-06-08",
+      "reason": "FB is continuous 2012-05-18 \u2192 2022-06-08 (day before FB\u2192META rebrand); provider added sporadic partial-coverage bars 2025-06-27 \u2192 2026-07-31 that are unreliable (5-16 sessions/month vs 20). Adapter treats everything past 2022-06-08 as unavailable."
+    },
+    "GEN": {
+      "provider_symbol": "NLOK",
+      "truncation_ts_et": "2022-11-07",
+      "reason": "provider truncated at NortonLifeLock->Gen Digital rebrand; no continuation series"
+    }
+  },
+  "known_internal_gaps": {
+    "O": [
+      {
+        "gap_after": "2008-02-12",
+        "gap_before": "2008-11-14",
+        "n_missing_sessions": 192
+      }
+    ],
+    "BF-B": [
+      {
+        "gap_after": "2026-03-27",
+        "gap_before": "2026-09-08",
+        "n_missing_sessions": 111
+      }
+    ],
+    "BRK-B": [
+      {
+        "gap_after": "2026-03-27",
+        "gap_before": "2026-09-08",
+        "n_missing_sessions": 111
+      }
+    ]
+  },
+  "artifacts": {
+    "coverage_by_ticker_session": "/Users/aleksandr/Projects/PythonProject1/data/phase1_audit/coverage_by_ticker_session.parquet",
+    "coverage_by_ticker": "/Users/aleksandr/Projects/PythonProject1/data/phase1_audit/coverage_by_ticker.parquet",
+    "session_calendar": "/Users/aleksandr/Projects/PythonProject1/data/phase1_audit/session_calendar.parquet",
+    "source_switch_by_ticker": "/Users/aleksandr/Projects/PythonProject1/data/phase1_audit/source_switch_by_ticker.parquet"
+  }
+}

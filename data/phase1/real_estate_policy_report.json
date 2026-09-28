@@ -1,0 +1,429 @@
+{
+  "generated_at_utc": "2026-09-28T17:51:30+00:00",
+  "purpose": "Resolve Phase 1 Real Estate sector benchmark policy on data-integrity grounds before freezing the Phase 1 dataset spec. No IC, decile, or signal-performance metric was computed.",
+  "phase_0F_frozen_spec_reference": "frozen hypothesis names 'SPDR sector ETF' as the \u03b2=1 sector benchmark; XLRE was the intended Real Estate benchmark",
+  "xlre_status_in_hf": "MISSING from provider snapshot 2026-09-28",
+  "xlre_inception": "2015-10-08",
+  "trustworthy_start_pit": "2001-01-16",
+  "coverage_impact": {
+    "real_estate_tickers_current_sp500": [
+      "AMT",
+      "ARE",
+      "BXP",
+      "CBRE",
+      "CCI",
+      "CPT",
+      "CSGP",
+      "DLR",
+      "DOC",
+      "EQIX",
+      "ESS",
+      "EXR",
+      "FRT",
+      "HST",
+      "INVH",
+      "IRM",
+      "KIM",
+      "MAA",
+      "O",
+      "PLD",
+      "PSA",
+      "REG",
+      "SBAC",
+      "SPG",
+      "UDR",
+      "VICI",
+      "VMRK",
+      "VTR",
+      "WELL",
+      "WY"
+    ],
+    "n_re_tickers_current_sp500": 30,
+    "trustworthy_window": {
+      "label": "trustworthy (2001-01-16+)",
+      "start": "2001-01-16",
+      "end": null,
+      "total_observations": 4669901,
+      "real_estate_observations": 143538,
+      "real_estate_fraction": 0.030736840031512447
+    },
+    "best_hf_window": {
+      "label": "best HF coverage 2011-2022",
+      "start": "2011-01-01",
+      "end": "2022-12-31",
+      "total_observations": 2199245,
+      "real_estate_observations": 84480,
+      "real_estate_fraction": 0.038413182705883155
+    },
+    "post_gics_re_carveout": {
+      "label": "post GICS RE carve-out (2016-09-01+)",
+      "start": "2016-09-01",
+      "end": null,
+      "total_observations": 1832446,
+      "real_estate_observations": 93387,
+      "real_estate_fraction": 0.05096302974275913
+    },
+    "median_re_members_by_year": [
+      {
+        "year": 1996,
+        "median_re_members": 2,
+        "median_total_members": 487,
+        "median_re_frac": 0.004106776180698152
+      },
+      {
+        "year": 1997,
+        "median_re_members": 2,
+        "median_total_members": 488,
+        "median_re_frac": 0.004098360655737705
+      },
+      {
+        "year": 1998,
+        "median_re_members": 2,
+        "median_total_members": 490,
+        "median_re_frac": 0.004081632653061225
+      },
+      {
+        "year": 1999,
+        "median_re_members": 1,
+        "median_total_members": 491,
+        "median_re_frac": 0.002036659877800407
+      },
+      {
+        "year": 2000,
+        "median_re_members": 1,
+        "median_total_members": 492,
+        "median_re_frac": 0.0020325203252032522
+      },
+      {
+        "year": 2001,
+        "median_re_members": 1,
+        "median_total_members": 495,
+        "median_re_frac": 0.00202020202020202
+      },
+      {
+        "year": 2002,
+        "median_re_members": 2,
+        "median_total_members": 495,
+        "median_re_frac": 0.00404040404040404
+      },
+      {
+        "year": 2003,
+        "median_re_members": 2,
+        "median_total_members": 494,
+        "median_re_frac": 0.004048582995951417
+      },
+      {
+        "year": 2004,
+        "median_re_members": 3,
+        "median_total_members": 495,
+        "median_re_frac": 0.006060606060606061
+      },
+      {
+        "year": 2005,
+        "median_re_members": 3,
+        "median_total_members": 496,
+        "median_re_frac": 0.006060606060606061
+      },
+      {
+        "year": 2006,
+        "median_re_members": 6,
+        "median_total_members": 497,
+        "median_re_frac": 0.012072434607645875
+      },
+      {
+        "year": 2007,
+        "median_re_members": 8,
+        "median_total_members": 497,
+        "median_re_frac": 0.01609657947686117
+      },
+      {
+        "year": 2008,
+        "median_re_members": 9,
+        "median_total_members": 497,
+        "median_re_frac": 0.018108651911468814
+      },
+      {
+        "year": 2009,
+        "median_re_members": 12,
+        "median_total_members": 499,
+        "median_re_frac": 0.02404809619238477
+      },
+      {
+        "year": 2010,
+        "median_re_members": 12,
+        "median_total_members": 499,
+        "median_re_frac": 0.02404809619238477
+      },
+      {
+        "year": 2011,
+        "median_re_members": 12,
+        "median_total_members": 497,
+        "median_re_frac": 0.02414486921529175
+      },
+      {
+        "year": 2012,
+        "median_re_members": 13,
+        "median_total_members": 497,
+        "median_re_frac": 0.026156941649899398
+      },
+      {
+        "year": 2013,
+        "median_re_members": 13,
+        "median_total_members": 497,
+        "median_re_frac": 0.026156941649899398
+      },
+      {
+        "year": 2014,
+        "median_re_members": 14,
+        "median_total_members": 498,
+        "median_re_frac": 0.028056112224448898
+      },
+      {
+        "year": 2015,
+        "median_re_members": 16,
+        "median_total_members": 500,
+        "median_re_frac": 0.03187250996015936
+      },
+      {
+        "year": 2016,
+        "median_re_members": 20,
+        "median_total_members": 505,
+        "median_re_frac": 0.039525691699604744
+      },
+      {
+        "year": 2017,
+        "median_re_members": 23,
+        "median_total_members": 506,
+        "median_re_frac": 0.045454545454545456
+      },
+      {
+        "year": 2018,
+        "median_re_members": 24,
+        "median_total_members": 506,
+        "median_re_frac": 0.04743083003952569
+      },
+      {
+        "year": 2019,
+        "median_re_members": 24,
+        "median_total_members": 504,
+        "median_re_frac": 0.047619047619047616
+      },
+      {
+        "year": 2020,
+        "median_re_members": 24,
+        "median_total_members": 504,
+        "median_re_frac": 0.047619047619047616
+      },
+      {
+        "year": 2021,
+        "median_re_members": 24,
+        "median_total_members": 504,
+        "median_re_frac": 0.047619047619047616
+      },
+      {
+        "year": 2022,
+        "median_re_members": 26,
+        "median_total_members": 502,
+        "median_re_frac": 0.05179282868525897
+      },
+      {
+        "year": 2023,
+        "median_re_members": 28,
+        "median_total_members": 502,
+        "median_re_frac": 0.055776892430278883
+      },
+      {
+        "year": 2024,
+        "median_re_members": 29,
+        "median_total_members": 502,
+        "median_re_frac": 0.05776892430278884
+      },
+      {
+        "year": 2025,
+        "median_re_members": 29,
+        "median_total_members": 502,
+        "median_re_frac": 0.05776892430278884
+      },
+      {
+        "year": 2026,
+        "median_re_members": 29,
+        "median_total_members": 502,
+        "median_re_frac": 0.05776892430278884
+      }
+    ]
+  },
+  "hf_benchmark_availability": {
+    "XLRE": {
+      "in_hf": false
+    },
+    "IYR": {
+      "in_hf": true,
+      "first_date": "2002-12-30",
+      "last_date": "2026-09-24",
+      "n_bars": 445127
+    },
+    "VNQ": {
+      "in_hf": false
+    },
+    "RWR": {
+      "in_hf": true,
+      "first_date": "2002-12-30",
+      "last_date": "2026-09-24",
+      "n_bars": 330797
+    },
+    "REM": {
+      "in_hf": true,
+      "first_date": "2007-05-04",
+      "last_date": "2026-09-24",
+      "n_bars": 264793
+    },
+    "USRT": {
+      "in_hf": true,
+      "first_date": "2007-05-04",
+      "last_date": "2026-09-24",
+      "n_bars": 130981
+    },
+    "REZ": {
+      "in_hf": true,
+      "first_date": "2007-05-04",
+      "last_date": "2026-09-24",
+      "n_bars": 145922
+    },
+    "SCHH": {
+      "in_hf": false
+    },
+    "FREL": {
+      "in_hf": false
+    }
+  },
+  "hf_real_estate_ticker_coverage": {
+    "re_tickers_total": 30,
+    "re_tickers_in_hf": [
+      "AMT",
+      "ARE",
+      "BXP",
+      "CBRE",
+      "CCI",
+      "CSGP",
+      "DLR",
+      "EQIX",
+      "ESS",
+      "EXR",
+      "FRT",
+      "HST",
+      "IRM",
+      "KIM",
+      "MAA",
+      "O",
+      "PLD",
+      "PSA",
+      "REG",
+      "SBAC",
+      "SPG",
+      "UDR",
+      "VICI",
+      "VTR",
+      "WELL",
+      "WY"
+    ],
+    "re_tickers_missing_from_hf": [
+      "CPT",
+      "DOC",
+      "INVH",
+      "VMRK"
+    ]
+  },
+  "option_analyses": [
+    {
+      "option": "A",
+      "label": "use XLRE from a compatible external source",
+      "external_data_required": true,
+      "candidate_sources_reviewed": [
+        {
+          "source": "Yahoo Finance",
+          "cost": "free",
+          "5m_history": "rolling 60 days only",
+          "verdict": "unusable for 2015-2022 backfill"
+        },
+        {
+          "source": "Alpaca free tier",
+          "cost": "free",
+          "5m_history": "2016+ IEX feed only",
+          "verdict": "same IEX-only regime as HF post-2022; would still leave pre-2016 gap; introduces third feed source with unclear adjustment/timestamp semantics"
+        },
+        {
+          "source": "FirstRateData",
+          "cost": "one-shot ~$99 (subscription for updates)",
+          "5m_history": "10 years back",
+          "verdict": "would work but is paid; unknown alignment with HF's pitrading/iex composite; corporate-action policy differs; no way to verify bar-boundary convention matches HF"
+        },
+        {
+          "source": "Barchart Premier",
+          "cost": "monthly subscription",
+          "5m_history": "back to 2009",
+          "verdict": "subscription, adjustment/timestamp alignment risk"
+        },
+        {
+          "source": "Polygon / Databento",
+          "cost": "paid",
+          "5m_history": "deep",
+          "verdict": "high quality but paid, and cross-source risk remains"
+        }
+      ],
+      "data_integrity_concerns": [
+        "Splices a 3rd source into the dataset \u2014 timestamp convention (bar start vs bar end), holiday handling, corporate-action treatment, and last-print policy may differ from HF.",
+        "Pre-XLRE-inception (before 2015-10-08) still leaves Real Estate without a sector benchmark; Option A does NOT solve pre-2015 windows.",
+        "Verification of alignment requires per-bar comparison against HF on overlapping periods \u2014 non-trivial and cannot fully rule out subtle discrepancies.",
+        "Free reliable source for 5m XLRE 2015-2022 does not exist per web search (2026-09-28)."
+      ],
+      "spec_impact": "preserves frozen hypothesis spec exactly (post-2015-10-08 only)"
+    },
+    {
+      "option": "B",
+      "label": "exclude Real Estate constituents",
+      "external_data_required": false,
+      "coverage_impact": {
+        "trustworthy_2001plus_fraction_lost": "3.07% of PIT observations",
+        "best_hf_window_2011_2022_fraction_lost": "3.84%",
+        "post_gics_2016plus_fraction_lost": "~5.2%",
+        "post_2022_fraction_lost": "~5.8% (26-29 of 502 daily members)"
+      },
+      "data_integrity_concerns": [
+        "None \u2014 100% internal to HF dataset; no external splice; no timestamp/adjustment ambiguity."
+      ],
+      "spec_impact": "hypothesis spec applies to 10 of 11 sectors (all sectors except Real Estate); explicitly documented scope narrowing rather than spec change; cross-sectional signal at 13:00 ET evaluated on ~476 tickers per session instead of ~502",
+      "additional_notes": [
+        "XLRE launched 2015-10-08 \u2014 pre-2015 RE stocks classified as Financials in GICS anyway; Option B removes an ambiguity across the GICS 2016 carve-out.",
+        "Reduced cross-section increases per-timestamp IC standard error by roughly sqrt(502/476) \u2248 1.027, i.e. ~2.7% larger \u2014 negligible for statistical power."
+      ]
+    },
+    {
+      "option": "C",
+      "label": "use IYR as an explicitly documented specification deviation",
+      "external_data_required": false,
+      "coverage_impact": {
+        "note": "Preserves all Real Estate stocks in cross-section (0% loss)"
+      },
+      "spec_impact": "SIGNIFICANT \u2014 sector-relative representation for Real Estate stocks becomes 'stock minus IYR' instead of 'stock minus XLRE'. IYR tracks the Dow Jones U.S. Real Estate Capped Index (~85 constituents including mid/small-cap REITs, mortgage REITs, and real estate services), a different universe from XLRE's ~30 S&P 500 REITs. The typical XLRE/IYR daily-return correlation is ~0.95-0.98 (high but not identical); residuals from the two benchmarks are not interchangeable at the 5-minute cross-sectional level.",
+      "data_integrity_concerns": [
+        "None on the data-integrity axis (same HF source, deep history 2003+).",
+        "BUT: this is a *specification deviation*. The frozen Phase 0F hypothesis names 'SPDR sector ETF' as the \u03b2=1 sector benchmark. Substituting IYR is a rewrite of that clause, not a mere technical fill-in."
+      ],
+      "additional_notes": [
+        "If C is chosen, Phase 2 confirmation is testing a DIFFERENT frozen spec than what was preregistered.",
+        "Recording IYR-based Phase 2 results as confirmation of the Phase 0F hypothesis would be misleading."
+      ]
+    }
+  ],
+  "recommendation": {
+    "chosen": "B",
+    "label": "exclude Real Estate constituents",
+    "rationale": "Purely on data-integrity grounds: Option B is the only choice that introduces no external data (Option A) and no specification deviation (Option C). The coverage impact is small \u2014 3.07% of the PIT universe in the trustworthy window (2001+), 3.84% in the best HF-coverage window (2011-2022), and ~5.8% in the modern post-2022 regime. Statistical power loss is negligible (~2.7% larger per-timestamp IC standard error). The frozen Phase 0F hypothesis remains applied exactly as written to 10 of 11 sectors; the exclusion is a documented scope narrowing, not a spec change.",
+    "operational_rule": "Filter out any (ticker, session) row where sector_map[ticker] == 'XLRE'. Applied at the eligibility layer inside phase1.eligibility before the cross-sectional ranking step. Never derive Real Estate sector-relative returns; those stocks are simply absent from Phase 2 cross-sections.",
+    "consequences_documented_for_phase_2": [
+      "Cross-section size at each decision time drops by ~26-29 names post-2016.",
+      "Real Estate-specific reversal (if any) will not be evaluated by Phase 2. This is a scope limitation acknowledged upfront, not a survivorship issue.",
+      "If a future Phase 10 research cycle wants to test Real Estate reversal, that requires an independent XLRE data source and a NEW preregistered hypothesis."
+    ]
+  }
+}

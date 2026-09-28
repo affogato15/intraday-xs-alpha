@@ -1,0 +1,26 @@
+{
+  "generated_at_utc": "2026-09-27T21:19:01+00:00",
+  "purpose": "Falsification of the H=60m midday reversal seen in the primary Phase 0A IC map. Forward window is shifted by one 5-min bar; if the effect is bid-ask bounce microstructure, IC magnitude should collapse. Diagnostic only, not a candidate specification.",
+  "skip_bars": 1,
+  "horizon_min": 60,
+  "lookbacks_min": [
+    5,
+    15,
+    30,
+    60,
+    120
+  ],
+  "decision_times_et": [
+    "10:00",
+    "11:00",
+    "12:00",
+    "13:00",
+    "14:00",
+    "15:00"
+  ],
+  "n_ic_observations_total": 1500,
+  "artifacts": {
+    "ic_skip1_per_timestamp": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/signal_map_falsification/ic_skip1_per_timestamp.parquet",
+    "ic_skip1_summary_L_dt": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/signal_map_falsification/ic_skip1_summary_L_dt.parquet"
+  }
+}

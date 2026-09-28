@@ -1,0 +1,125 @@
+{
+  "generated_at_utc": "2026-09-27T21:29:34+00:00",
+  "min_coverage": 0.85,
+  "state_vars": [
+    "trailing_volume",
+    "abs_ret",
+    "realized_vol"
+  ],
+  "lookbacks_min": [
+    5,
+    15,
+    30,
+    60,
+    120
+  ],
+  "primary_horizon_min": 60,
+  "n_quintiles": 5,
+  "n_ic_observations_total": 7320,
+  "top10_by_abs_Q5_minus_Q1": [
+    {
+      "state_var": "realized_vol",
+      "L_min": 120,
+      "decision_time_et": "14:00",
+      "ic_Q1": 0.036768113206168886,
+      "t_Q1": 1.788271734440316,
+      "ic_Q5": -0.045458862752947055,
+      "t_Q5": -1.7794511513373457,
+      "ic_Q5_minus_Q1": -0.08222697595911593
+    },
+    {
+      "state_var": "abs_ret",
+      "L_min": 15,
+      "decision_time_et": "13:00",
+      "ic_Q1": 0.007628683428404046,
+      "t_Q1": 0.4872592029056242,
+      "ic_Q5": -0.06860428277775864,
+      "t_Q5": -2.327063673276723,
+      "ic_Q5_minus_Q1": -0.07623296620616268
+    },
+    {
+      "state_var": "trailing_volume",
+      "L_min": 120,
+      "decision_time_et": "14:00",
+      "ic_Q1": 0.018926828946615258,
+      "t_Q1": 0.9774332516364698,
+      "ic_Q5": -0.054356146006680144,
+      "t_Q5": -2.0587961288456995,
+      "ic_Q5_minus_Q1": -0.0732829749532954
+    },
+    {
+      "state_var": "abs_ret",
+      "L_min": 15,
+      "decision_time_et": "12:00",
+      "ic_Q1": 0.014500419168200137,
+      "t_Q1": 1.0083177821623253,
+      "ic_Q5": -0.047176277350308014,
+      "t_Q5": -1.5798914419925287,
+      "ic_Q5_minus_Q1": -0.06167669651850815
+    },
+    {
+      "state_var": "trailing_volume",
+      "L_min": 15,
+      "decision_time_et": "11:00",
+      "ic_Q1": 0.015491009893685372,
+      "t_Q1": 0.6356856947027116,
+      "ic_Q5": -0.043499034993211345,
+      "t_Q5": -1.4200235482657777,
+      "ic_Q5_minus_Q1": -0.058990044886896714
+    },
+    {
+      "state_var": "realized_vol",
+      "L_min": 60,
+      "decision_time_et": "14:00",
+      "ic_Q1": 0.023323239171289124,
+      "t_Q1": 1.3033786194837234,
+      "ic_Q5": -0.03144989654349892,
+      "t_Q5": -1.355164058819889,
+      "ic_Q5_minus_Q1": -0.05477313571478804
+    },
+    {
+      "state_var": "realized_vol",
+      "L_min": 60,
+      "decision_time_et": "11:00",
+      "ic_Q1": 0.01756992991771762,
+      "t_Q1": 0.7959249509054503,
+      "ic_Q5": -0.03539123696022503,
+      "t_Q5": -1.253001412537673,
+      "ic_Q5_minus_Q1": -0.05296116687794265
+    },
+    {
+      "state_var": "abs_ret",
+      "L_min": 5,
+      "decision_time_et": "10:00",
+      "ic_Q1": -0.011962387818839947,
+      "t_Q1": -0.9138564243283179,
+      "ic_Q5": -0.06311448796052768,
+      "t_Q5": -1.876800528433178,
+      "ic_Q5_minus_Q1": -0.05115210014168774
+    },
+    {
+      "state_var": "realized_vol",
+      "L_min": 15,
+      "decision_time_et": "11:00",
+      "ic_Q1": 0.02180717900664301,
+      "t_Q1": 0.9344093762762566,
+      "ic_Q5": -0.022317500153465,
+      "t_Q5": -0.7661087431941064,
+      "ic_Q5_minus_Q1": -0.04412467916010801
+    },
+    {
+      "state_var": "trailing_volume",
+      "L_min": 60,
+      "decision_time_et": "11:00",
+      "ic_Q1": 0.011352471354451095,
+      "t_Q1": 0.5151677049160605,
+      "ic_Q5": -0.03219130008593575,
+      "t_Q5": -1.0193878788858226,
+      "ic_Q5_minus_Q1": -0.04354377144038685
+    }
+  ],
+  "artifacts": {
+    "ic_conditional_per_timestamp": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/signal_map_conditional/ic_conditional_per_timestamp.parquet",
+    "ic_conditional_summary": "/Users/aleksandr/Projects/PythonProject1/data/phase0_audit/signal_map_conditional/ic_conditional_summary.parquet"
+  }
+}
